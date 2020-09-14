@@ -1,0 +1,62 @@
+header {
+    display: flex;
+    color: white;
+    background-color: #3a3a3a;
+    justify-content: center;
+}
+
+h1 {
+    font-size: 30px;
+    padding: 10px 10px;
+}
+
+h3, #city-form {
+    padding-left: 50px;
+    padding-top: 20px;
+}
+
+button {
+    color: white;
+    background-color: #3a3a3a;
+}
+
+li {
+    list-style: none;
+    padding-top: 20px;
+    padding-left: 30px;
+}
+
+.search-btn {
+    color: white;
+    background-color: #5aa6f7;
+}
+
+/* .card-header {
+    background-color: white;
+    border: none;
+}
+.card {
+    border: none;
+} */
+
+#uv-data {
+    display: inline-block;
+}
+
+.favorable {
+    color: white;
+    background-color: lightgreen;
+    padding: 10px;
+}
+
+.moderate {
+    color: white;
+    background-color: orange;
+    padding: 10px;
+}
+
+.severe {
+    color: white;
+    background-color: red;
+    padding: 10px;
+}
