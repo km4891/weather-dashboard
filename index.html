@@ -21,49 +21,26 @@
     </header>
 
 
-  <main>
-    <div class="container-xlg">
-        <!-- start of row -->
-        <div class="row">
-            <!-- search bar is here  -->
-            <div class="col-md-12 col-lg-3 p-3">
-                <h3>Search By City!</h3>
-                <div class="input-group">
-                    <input id="cityName" type="text" class="form-control" placeholder="Search Here!">
-                    <div class="input-group-append">
-                        <button class="btn btn-primary" type="button" id="citySearch">
-                            <i class="fa fa-search"></i>
-                        </button>
-                    </div>
-                </div>
-                <!-- random cities  -->
-                <div class="list-group mt-5" id="history"></div>
-            </div>
-
-            <!-- current weather  -->
-            <div class="col-md-12 col-lg-9 px-0">
-                <h3>Current Weather</h3>
-                <div id="current-weather"></div>
-                <!-- here we have the weather cards  -->
-                <div class="row">
-                    <div class="col-10">
-                        <h3>5-Day Forecast</h3>
-                    </div>
-                </div>
-                
-                <div class="row" id="forecast-row">
-                    
-                </div>
-            </div>
-        <!-- end of main row  -->
-        </div>
-    </div>
-
-
-  
-    
-</main>
+    <main class="flex-row justify-space-between">
+        <div class="col-12 col-md-4"></div>
+        <div class="card">
+            <h3 class="card-header text-uppercase">Search By City</h3>
+            <form id="city-form" class="card-body">
+                <!-- input name & id was "username" -->
+              <input name="city-input" id="city-input" type="text" autofocus="true" class="form-input" /> 
+              <button type="submit" class="btn btn-primary"><i class="fa fa-search"></i></button>
+            </form>
+          </div>
+      
+        <div class="col-12 col-md-8">
+            <h2 class="subtitle">Current Weather: <span id="cities-search-term"></span></h2>
+            <div id="cities-container" class="list-group"></div>
+          </div>
+      </main>
 </body>
 
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg==" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.27.0/moment.min.js" integrity="sha512-rmZcZsyhe0/MAjquhTgiUcb4d9knaFc7b5xAfju483gbEXTkeJRUMIPk6s3ySZMYUHEcjKbjLjyddGWMrNEvZg==" crossorigin="anonymous"></script>
 <script src="./assets/js/script.js"></script>
 </html>
